@@ -1,10 +1,8 @@
 steps:
-- name: 'gcr.io/marine-service-397521/image3
+- name: 'gcr.io/cloud-builders/docker'
   args:
   - build
   - .
-  - --tag-with-sha
-  - --build-arg IMAGE_NAME=image3
-  - --build-arg TAG=image3
+  - '--tag=gcr.io/marine-service-397521/image3' # Adjust image name and project ID
 images:
-- name: 'gcr.io/marine-service-397521/image3
+- 'gcr.io/marine-service-397521/image3' # Adjust image name and project ID
