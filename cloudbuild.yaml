@@ -1,0 +1,10 @@
+steps:
+- name: 'gcr.io/marine-service-397521/image3
+  args:
+  - build
+  - .
+  - --tag-with-sha
+  - --build-arg IMAGE_NAME=image3
+  - --build-arg TAG=image3
+images:
+- name: 'gcr.io/marine-service-397521/image3
