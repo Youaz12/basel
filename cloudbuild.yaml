@@ -6,3 +6,6 @@ steps:
   - '--tag=gcr.io/marine-service-397521/image3' # Adjust image name and project ID
 images:
 - 'gcr.io/marine-service-397521/image3' # Adjust image name and project ID
+options:
+  logging: CLOUD_LOGGING_ONLY
+
